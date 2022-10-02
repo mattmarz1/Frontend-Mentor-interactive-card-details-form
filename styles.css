@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("images/bg-main-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 40% 100%;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  gap: 6.25rem;
+  width: 100%;
+}
+
+.card {
+  height: 15.3125rem;
+  width: 27.9375rem;
+  padding: 1.875rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: .3125rem;
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+}
+
+.card1 {
+  background-image: url("images/bg-card-front.png");
+  margin-bottom: 2.5rem;
+  margin-left: 6.25rem;
+}
+
+.card2 {
+  background-image: url("images/bg-card-back.png");
+  margin-left: 12.5rem;
+}
+
+.card-details {
+  margin-top: 3.125rem;
+}
+
+.card-number {
+  font-size: 1.6875rem;
+  letter-spacing: .1875rem;
+}
+
+.card-bottom-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.1875rem;
+  font-size: .75rem;
+  letter-spacing: .125rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-block: auto;
+  width: 21.875rem;
+}
+
+label {
+  margin-top: 1.25rem;
+  margin-bottom: .3125rem;
+  font-size: .6875rem;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+}
+
+input {
+  padding-block: .625rem;
+  padding-left: .625rem;
+  border: .125rem solid hsl(270, 3%, 87%);
+  border-radius: .3125rem;
+  border-width: .0625rem;
+}
+
+input::placeholder {
+  font-family: "Space Grotesk", sans-serif;
+  color: hsl(279, 6%, 55%);
+}
+
+.input-text-error {
+  display: none;
+  margin-top: .3125rem;
+  font-size: .625rem;
+  color: hsl(0, 100%, 66%);
+}
+
+input:focus {
+  border-color: hsl(249, 99%, 64%);
+  outline: none;
+}
+
+.form-bottom-container {
+  display: flex;
+  margin-top: 1.25rem;
+}
+
+.input-container1 {
+  display: flex;
+  width: fit-content;
+}
+
+.input-container1 input {
+  width: 4.0625rem;
+  margin-top: .3125rem;
+}
+
+.input-container1 input:first-child {
+  margin-right: .625rem;
+}
+
+.form-right-side-container {
+  margin-left: 1.25rem;
+}
+
+.input-container2 input {
+  width: 100%;
+  margin-top: .3125rem;
+}
+
+button {
+  margin-top: 1.875rem;
+  padding: .9375rem;
+  border: none;
+  border-radius: .3125rem;
+  background-color: hsl(278, 68%, 11%);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.complete-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 21.875rem;
+}
+
+.complete-container p:first-of-type {
+  margin-bottom: .9375rem;
+  font-size: 1.5625rem;
+  text-transform: uppercase;
+  letter-spacing: .125rem;
+}
+
+.complete-container p:last-of-type {
+  color: hsl(279, 6%, 55%);
+}
+
+.complete-container img {
+  height: 4.375rem;
+  width: 4.375rem;
+  margin-bottom: 1.875rem;
+}
+
+.complete-container button {
+  width: 100%;
+}
+
+.card-exp-container {
+  display: flex;
+}
+
+@media (max-width: 71.875em) {
+  body {
+    align-items: initial;
+    background-image: url("images/bg-main-mobile.png");
+    background-size: 100% 40%;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+    gap: initial;
+    min-width: initial;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .card {
+    transform: scale(0.9);
+  }
+
+  .card1 {
+    margin-top: -7.5em;
+    z-index: 1;
+  }
+
+  form {
+    margin-block: initial;
+  }
+
+  @media (max-width: 37.5em) and (max-height: 50em) {
+    body {
+      background-size: 100% 30%;
+    }
+
+    main {
+      justify-content: initial;
+    }
+
+    .card-container {
+      align-items: center;
+      width: 100%;
+    }
+
+    .card {
+      height: 9.6875em;
+      width: 18.125em;
+      margin-bottom: initial;
+      padding: 1.25em;
+    }
+
+    .card1 {
+      margin-top: -4.6875em;
+      margin-left: -6.25em;
+    }
+
+    .card2 {
+      margin-top: 3.125em;
+      margin-left: 1.25em;
+    }
+
+    .card-number {
+      font-size: 1.0625em !important;
+    }
+
+    .card img {
+      height: 1.5625em;
+    }
+
+    .card-details {
+      margin-top: 1.25em;
+    }
+
+    .card-details p {
+      font-size: .625em;
+    }
+
+    .card-bottom-container {
+      margin-top: 1.875em;
+    }
+  }
+}
